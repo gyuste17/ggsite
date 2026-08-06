@@ -8,6 +8,32 @@ interface Props {
   config: SiteConfig;
 }
 
+const getRootDomain = () => {
+  if (typeof window === 'undefined') return '/';
+  const host = window.location.host;
+  const isLocalhost = host.includes('localhost') || host.includes('127.0.0.1');
+  const protocol = window.location.protocol + '//';
+  
+  if (isLocalhost) {
+    return `${protocol}localhost:3000`;
+  }
+  
+  const parts = host.split('.');
+  const isVercelApp = host.endsWith('vercel.app');
+  
+  if (isVercelApp) {
+    if (parts.length > 3) {
+      return `${protocol}${parts.slice(1).join('.')}`;
+    }
+  } else {
+    if (parts.length > 2) {
+      return `${protocol}${parts.slice(1).join('.')}`;
+    }
+  }
+  
+  return `${protocol}${host}`;
+};
+
 export default function RestaurantTemplate({ config }: Props) {
   const isDark = config.theme.dark;
   const whatsappUrl = `https://wa.me/${config.contact.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(config.contact.whatsappMessage || 'Hola!')}`;
@@ -34,15 +60,26 @@ export default function RestaurantTemplate({ config }: Props) {
             <a href="#contact" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-stone-600'}`}>Contacto</a>
           </nav>
           
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-tenant-primary text-white font-semibold px-5 py-2.5 rounded-full hover:bg-tenant-primary/95 transition duration-300 shadow-md shadow-tenant-primary/10 flex items-center gap-2 text-sm"
-          >
-            <LucideIcon name="MessageCircle" size={18} />
-            Reservar Mesa
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={getRootDomain()}
+              className={`hidden sm:flex items-center gap-1 font-bold text-sm hover:text-tenant-primary transition-colors ${
+                isDark ? 'text-slate-400' : 'text-stone-500'
+              }`}
+            >
+              <LucideIcon name="ArrowLeft" size={16} />
+              Volver a ggsite
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-tenant-primary text-white font-semibold px-5 py-2.5 rounded-full hover:bg-tenant-primary/95 transition duration-300 shadow-md shadow-tenant-primary/10 flex items-center gap-2 text-sm"
+            >
+              <LucideIcon name="MessageCircle" size={18} />
+              Reservar Mesa
+            </a>
+          </div>
         </div>
       </header>
 

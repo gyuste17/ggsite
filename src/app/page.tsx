@@ -62,7 +62,7 @@ export default function MotherPage() {
         <>
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none" />
           <div className="absolute top-[20%] right-[-10%] w-[60%] h-[60%] rounded-full bg-indigo-600/10 blur-[150px] pointer-events-none" />
-          <div className="absolute bottom-[-10%] left-[20%] w-[50%] h-[50%] rounded-full bg-purple-650/10 blur-[130px] pointer-events-none" />
+          <div className="absolute bottom-[-10%] left-[20%] w-[50%] h-[50%] rounded-full bg-purple-600/10 blur-[130px] pointer-events-none" />
         </>
       ) : (
         <>
@@ -82,7 +82,7 @@ export default function MotherPage() {
         </a>
         
         <nav className={`hidden md:flex items-center gap-8 text-sm font-semibold transition-colors ${
-          darkMode ? 'text-slate-400' : 'text-slate-650'
+          darkMode ? 'text-slate-400' : 'text-slate-600'
         }`}>
           <a href="#how-it-works" className={`transition-colors ${darkMode ? 'hover:text-slate-100' : 'hover:text-slate-950'}`}>¿Cómo funciona?</a>
           <a href="#templates" className={`transition-colors ${darkMode ? 'hover:text-slate-100' : 'hover:text-slate-950'}`}>Plantillas</a>
@@ -134,7 +134,7 @@ export default function MotherPage() {
         </h1>
 
         <p className={`text-lg sm:text-xl max-w-3xl mx-auto mb-12 leading-relaxed transition-colors duration-300 ${
-          darkMode ? 'text-slate-400' : 'text-slate-650'
+          darkMode ? 'text-slate-400' : 'text-slate-600'
         }`}>
           Digitalizamos tu bar, restaurante, peluquería o negocio local sin que te cueste nada. Analizamos tus seguros actuales sin compromiso, mejoramos tus condiciones y te regalamos tu web totalmente personalizada.
         </p>
@@ -142,7 +142,7 @@ export default function MotherPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="#templates"
-            className="w-full sm:w-auto bg-gradient-to-r from-blue-650 to-indigo-650 hover:from-blue-600 hover:to-indigo-600 text-white font-extrabold px-8 py-4 rounded-xl transition duration-300 shadow-xl shadow-indigo-650/20 flex items-center justify-center gap-3 text-lg"
+            className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold px-8 py-4 rounded-xl transition duration-300 shadow-xl shadow-indigo-600/20 flex items-center justify-center gap-3 text-lg"
           >
             Ver Demos de Plantillas
             <ArrowRight size={20} />
@@ -151,7 +151,7 @@ export default function MotherPage() {
             href="#contact"
             className={`w-full sm:w-auto font-bold px-8 py-4 rounded-xl border transition duration-300 flex items-center justify-center gap-2 text-lg ${
               darkMode 
-                ? 'bg-slate-900/80 hover:bg-slate-850 border-slate-800 text-slate-200' 
+                ? 'bg-slate-900/80 hover:bg-slate-800 border-slate-800 text-slate-200' 
                 : 'bg-white hover:bg-slate-100 border-slate-250 text-slate-700'
             }`}
           >
@@ -174,7 +174,7 @@ export default function MotherPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className={`border rounded-2xl p-8 relative transition duration-300 ${
               darkMode 
-                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-850' 
+                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-800' 
                 : 'bg-white border-slate-200 hover:border-slate-300'
             }`}>
               <div className="w-12 h-12 bg-blue-500/10 text-blue-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">
@@ -188,7 +188,7 @@ export default function MotherPage() {
 
             <div className={`border rounded-2xl p-8 relative transition duration-300 ${
               darkMode 
-                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-850' 
+                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-800' 
                 : 'bg-white border-slate-200 hover:border-slate-300'
             }`}>
               <div className="w-12 h-12 bg-indigo-500/10 text-indigo-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">
@@ -202,10 +202,10 @@ export default function MotherPage() {
 
             <div className={`border rounded-2xl p-8 relative transition duration-300 ${
               darkMode 
-                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-850' 
+                ? 'bg-[#0b0e14] border-slate-900 hover:border-slate-800' 
                 : 'bg-white border-slate-200 hover:border-slate-300'
             }`}>
-              <div className="w-12 h-12 bg-purple-500/10 text-purple-655 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">
+              <div className="w-12 h-12 bg-purple-500/10 text-purple-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">
                 <CheckCircle2 size={22} />
               </div>
               <h3 className="text-xl font-bold mb-4">3. Web Gratis Activa</h3>
@@ -221,9 +221,9 @@ export default function MotherPage() {
       <section id="templates" className="relative z-10 py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-indigo-650 font-bold text-sm uppercase tracking-wider">Demostraciones</span>
+            <span className="text-indigo-600 font-bold text-sm uppercase tracking-wider">Demostraciones</span>
             <h2 className="text-3xl sm:text-5xl font-black mt-2 tracking-tight">Nuestras Plantillas Disponibles</h2>
-            <p className={`mt-4 max-w-xl mx-auto ${darkMode ? 'text-slate-450' : 'text-slate-600'}`}>
+            <p className={`mt-4 max-w-xl mx-auto ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
               Diseños modernos optimizados para convertir visitas en llamadas telefónicas o reservas por WhatsApp.
             </p>
           </div>
@@ -239,7 +239,7 @@ export default function MotherPage() {
               <div>
                 <div className="h-48 bg-gradient-to-br from-amber-600/20 to-orange-700/20 relative flex items-center justify-center">
                   <Utensils size={48} className="text-orange-500 group-hover:scale-110 transition duration-300" />
-                  <span className="absolute top-4 right-4 bg-orange-650/10 text-orange-600 border border-orange-500/20 px-3 py-1 rounded-full text-xs font-bold">
+                  <span className="absolute top-4 right-4 bg-orange-600/10 text-orange-600 border border-orange-500/20 px-3 py-1 rounded-full text-xs font-bold">
                     Hostelería
                   </span>
                 </div>
@@ -258,7 +258,7 @@ export default function MotherPage() {
                   className={`w-full text-center border font-semibold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg text-sm ${
                     darkMode
                       ? 'bg-slate-900 hover:bg-indigo-600 hover:text-white border-slate-800 hover:border-indigo-500/30 text-slate-300'
-                      : 'bg-slate-50 hover:bg-indigo-650 hover:text-white border-slate-200 hover:border-indigo-500/30 text-slate-700'
+                      : 'bg-slate-50 hover:bg-indigo-600 hover:text-white border-slate-200 hover:border-indigo-500/30 text-slate-700'
                   }`}
                 >
                   Ver Demo (Bar Paco)
@@ -276,7 +276,7 @@ export default function MotherPage() {
               <div>
                 <div className="h-48 bg-gradient-to-br from-blue-600/20 to-sky-700/20 relative flex items-center justify-center">
                   <Wrench size={48} className="text-sky-500 group-hover:scale-110 transition duration-300" />
-                  <span className="absolute top-4 right-4 bg-sky-500/10 text-sky-655 border border-sky-500/20 px-3 py-1 rounded-full text-xs font-bold">
+                  <span className="absolute top-4 right-4 bg-sky-500/10 text-sky-600 border border-sky-500/20 px-3 py-1 rounded-full text-xs font-bold">
                     Servicios
                   </span>
                 </div>
@@ -295,7 +295,7 @@ export default function MotherPage() {
                   className={`w-full text-center border font-semibold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg text-sm ${
                     darkMode
                       ? 'bg-slate-900 hover:bg-indigo-600 hover:text-white border-slate-800 hover:border-indigo-500/30 text-slate-300'
-                      : 'bg-slate-50 hover:bg-indigo-655 hover:text-white border-slate-200 hover:border-indigo-500/30 text-slate-700'
+                      : 'bg-slate-50 hover:bg-indigo-600 hover:text-white border-slate-200 hover:border-indigo-500/30 text-slate-700'
                   }`}
                 >
                   Ver Demo (Fontanería Gómez)
@@ -381,7 +381,7 @@ export default function MotherPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-650 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center flex-shrink-0">
                     <Sparkles size={18} />
                   </div>
                   <div>
@@ -398,25 +398,25 @@ export default function MotherPage() {
               darkMode ? 'bg-[#0b0e14] border-slate-900 shadow-black/20' : 'bg-white border-slate-200 shadow-slate-100'
             }`}>
               <h3 className="text-xl font-bold mb-4">¿Por qué lo hacemos a cambio de la mediación?</h3>
-              <p className={`text-sm leading-relaxed mb-6 ${darkMode ? 'text-slate-400' : 'text-slate-650'}`}>
+              <p className={`text-sm leading-relaxed mb-6 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
                 Es una colaboración en la que todos ganamos. Al nombrarnos mediadores de tus pólizas de seguros existentes (comercio, responsabilidad civil, vida, vehículos):
               </p>
               
               <div className="space-y-3 text-sm font-medium">
                 <div className={`flex items-center gap-3 p-3 rounded-lg border ${
-                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-150'
+                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-100'
                 }`}>
                   <span className="text-indigo-600 font-bold">✔</span>
                   <span>Analizamos tus pólizas y te buscamos mejores ofertas en aseguradoras líderes.</span>
                 </div>
                 <div className={`flex items-center gap-3 p-3 rounded-lg border ${
-                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-150'
+                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-100'
                 }`}>
                   <span className="text-indigo-600 font-bold">✔</span>
                   <span>Tú no pagas más; al contrario, solemos reducir el importe anual de tus seguros.</span>
                 </div>
                 <div className={`flex items-center gap-3 p-3 rounded-lg border ${
-                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-150'
+                  darkMode ? 'bg-slate-950/60 border-slate-900' : 'bg-slate-50 border-slate-100'
                 }`}>
                   <span className="text-indigo-600 font-bold">✔</span>
                   <span>A cambio, nosotros financiamos la creación y el mantenimiento de tu nueva web.</span>
@@ -433,7 +433,7 @@ export default function MotherPage() {
           <div className="text-center mb-16">
             <span className="text-indigo-600 font-bold text-sm uppercase tracking-wider">Solicitud</span>
             <h2 className="text-3xl sm:text-5xl font-black mt-2 tracking-tight font-sans">Digitaliza tu Negocio Hoy</h2>
-            <p className={`mt-4 ${darkMode ? 'text-slate-405' : 'text-slate-600'}`}>Déjanos los datos básicos de tu negocio y te informaremos sin compromiso.</p>
+            <p className={`mt-4 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Déjanos los datos básicos de tu negocio y te informaremos sin compromiso.</p>
           </div>
 
           {formSubmitted ? (
@@ -489,7 +489,7 @@ export default function MotherPage() {
                   className={`w-full border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition ${
                     darkMode 
                       ? 'bg-[#07090e] border-slate-900 text-white placeholder-slate-600' 
-                      : 'bg-slate-50 border-slate-355 text-slate-800 placeholder-slate-400'
+                      : 'bg-slate-50 border-slate-300 text-slate-800 placeholder-slate-400'
                   }`}
                 />
               </div>
@@ -566,7 +566,7 @@ export default function MotherPage() {
 
               <button
                 type="submit"
-                className="md:col-span-2 w-full bg-gradient-to-r from-blue-650 to-indigo-650 hover:from-blue-600 hover:to-indigo-600 text-white font-extrabold py-4 rounded-xl transition duration-300 shadow-lg shadow-indigo-650/10 flex items-center justify-center gap-2 cursor-pointer text-lg"
+                className="md:col-span-2 w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold py-4 rounded-xl transition duration-300 shadow-lg shadow-indigo-600/10 flex items-center justify-center gap-2 cursor-pointer text-lg"
               >
                 <Send size={18} />
                 Enviar Solicitud
