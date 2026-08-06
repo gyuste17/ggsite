@@ -66,14 +66,9 @@ export default async function TenantLayout({ children, params }: Props) {
     >
       {/* Carga dinámica de la fuente desde Google Fonts */}
       {config.theme.font && (
-        <head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link 
-            href={`https://fonts.googleapis.com/css2?family=${config.theme.font.replace(/ /g, '+')}:wght@300;400;500;600;700;800&display=swap`} 
-            rel="stylesheet" 
-          />
-        </head>
+        <style dangerouslySetInnerHTML={{__html: `
+          @import url('https://fonts.googleapis.com/css2?family=${config.theme.font.replace(/ /g, '+')}:wght@300;400;500;600;700;800&display=swap');
+        `}} />
       )}
       
       {children}
