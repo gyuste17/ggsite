@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { SiteConfig } from '@/types/site';
 import LucideIcon from './Shared/LucideIcon';

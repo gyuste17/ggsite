@@ -94,12 +94,7 @@ export default async function TenantLayout({ children, params }: Props) {
         config.theme.dark ? 'bg-slate-950 text-slate-100' : 'bg-white text-slate-900'
       }`}
     >
-      {/* Carga dinámica de la fuente desde Google Fonts */}
-      {config.theme.font && (
-        <style dangerouslySetInnerHTML={{__html: `
-          @import url('https://fonts.googleapis.com/css2?family=${config.theme.font.replace(/ /g, '+')}:wght@300;400;500;600;700;800&display=swap');
-        `}} />
-      )}
+
       
       {children}
     </div>
