@@ -53,7 +53,7 @@ export default function MotherPage() {
   };
 
   return (
-    <div className={`min-h-screen font-sans transition-colors duration-300 overflow-hidden selection:bg-indigo-500/30 ${
+    <div className={`min-h-screen font-sans transition-colors duration-300 relative w-full overflow-x-hidden selection:bg-indigo-500/30 ${
       darkMode ? 'bg-[#07090e] text-slate-100' : 'bg-slate-50 text-slate-800'
     }`}>
       

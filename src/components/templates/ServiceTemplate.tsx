@@ -72,11 +72,11 @@ export default function ServiceTemplate({ config }: Props) {
           <div className="flex items-center gap-4">
             <a
               href={getRootDomain()}
-              className={`hidden sm:flex items-center gap-1 font-bold text-sm hover:text-tenant-primary transition-colors ${
+              className={`flex items-center gap-1 font-bold text-xs sm:text-sm hover:text-tenant-primary transition-colors ${
                 isDark ? 'text-slate-400' : 'text-slate-500'
               }`}
             >
-              <LucideIcon name="ArrowLeft" size={16} />
+              <LucideIcon name="ArrowLeft" size={15} />
               Volver a ggsite
             </a>
             <a
