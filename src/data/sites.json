@@ -1,0 +1,234 @@
+[
+  {
+    "id": "barpaco",
+    "subdomain": "barpaco",
+    "name": "Bar Paco",
+    "sector": "restaurante",
+    "theme": {
+      "primary": "#ea580c",
+      "secondary": "#ffedd5",
+      "dark": false,
+      "font": "Outfit"
+    },
+    "contact": {
+      "phone": "+34 912 345 678",
+      "email": "contacto@barpaco.es",
+      "address": "Calle de la Tapas, 14",
+      "city": "Madrid",
+      "mapsUrl": "https://maps.google.com",
+      "whatsappMessage": "Hola, me gustaría reservar una mesa en Bar Paco.",
+      "schedule": "Martes a Domingo: 12:00 - 16:00 y 19:30 - 23:30 (Lunes cerrado)"
+    },
+    "logoUrl": "",
+    "hero": {
+      "title": "Las mejores tapas tradicionales de Madrid",
+      "subtitle": "Comida casera, raciones generosas y el ambiente de toda la vida. ¡Ven a vernos o pide para llevar!",
+      "backgroundImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+    },
+    "about": "Desde 1985, Bar Paco ofrece a sus vecinos de Madrid las raciones más auténticas y las cañas mejor tiradas de la zona. Nuestro secreto es el producto fresco de mercado y el cariño en la cocina de la abuela. Ven a probar nuestras famosas patatas bravas, los calamares o la tortilla de patatas recién hecha.",
+    "services": [
+      {
+        "name": "Tortilla de Patatas de la Casa",
+        "description": "Nuestra tortilla campera, jugosa y con cebolla caramelizada. Ganadora de premios de barrio.",
+        "price": "12.50€",
+        "imageUrl": "https://images.unsplash.com/photo-1573225342350-16a548613d1a?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Ración de Calamares a la Romana",
+        "description": "Calamares frescos fritos en aceite de oliva limpio con un rebozado crujiente y tierno por dentro.",
+        "price": "14.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Croquetas Caseras de Jamón Ibérico",
+        "description": "Una bechamel extremadamente cremosa y el mejor jamón de bellota. 8 unidades.",
+        "price": "10.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Menú del Día Completo",
+        "description": "De martes a viernes a mediodía. Incluye primer plato, segundo, postre o café, pan y bebida.",
+        "price": "13.50€",
+        "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "features": [
+      {
+        "title": "Ingredientes de Mercado",
+        "description": "Compramos diariamente en los mercados locales para asegurar la máxima frescura.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Terraza Exterior",
+        "description": "Disfruta de tus cañas al aire libre en nuestra terraza acondicionada todo el año.",
+        "icon": "Sun"
+      },
+      {
+        "title": "Opciones para Llevar",
+        "description": "Te preparamos cualquier plato de nuestra carta para que lo disfrutes en tu casa caliente.",
+        "icon": "ShoppingBag"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500&q=80"
+    ],
+    "social": {
+      "instagram": "https://instagram.com/barpaco_madrid",
+      "facebook": "https://facebook.com/barpaco"
+    }
+  },
+  {
+    "id": "fontaneriagomez",
+    "subdomain": "fontaneriagomez",
+    "name": "Fontanería Gómez",
+    "sector": "servicios",
+    "theme": {
+      "primary": "#0284c7",
+      "secondary": "#e0f2fe",
+      "dark": false,
+      "font": "Inter"
+    },
+    "contact": {
+      "phone": "+34 600 123 456",
+      "email": "urgencias@fontaneriagomez.es",
+      "address": "Av. de la Constitución, 88",
+      "city": "Sevilla",
+      "mapsUrl": "https://maps.google.com",
+      "whatsappMessage": "Hola, necesito asistencia de un fontanero. ¿Tenéis disponibilidad?",
+      "schedule": "Urgencias 24 horas, todos los días del año. Oficina de Lunes a Viernes de 8:00 a 18:00."
+    },
+    "logoUrl": "",
+    "hero": {
+      "title": "Fontaneros de confianza en Sevilla",
+      "subtitle": "Servicios de urgencia 24h, desatascos, reparación de fugas, calderas y reformas de baños. ¡Llegamos en menos de 30 minutos!",
+      "backgroundImage": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1200&q=80"
+    },
+    "about": "Fontanería Gómez es una empresa familiar con más de 20 años de experiencia solucionando cualquier problema de fontanería en Sevilla y alrededores. Nos avala nuestra rapidez, limpieza y unos precios honestos y transparentes sin sorpresas de última hora. Atendemos tanto a particulares como a comunidades de vecinos y empresas.",
+    "services": [
+      {
+        "name": "Urgencias 24 Horas",
+        "description": "Fugas de agua, rotura de tuberías, inundaciones. Llama a cualquier hora y acudimos de inmediato para detener el problema.",
+        "price": "Desde 45€",
+        "imageUrl": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Desatascos con Maquinaria",
+        "description": "Desatascamos fregaderos, inodoros, bajantes y tuberías generales de forma rápida y sin dañar tus instalaciones.",
+        "price": "Desde 60€",
+        "imageUrl": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Reparación de Termos y Calderas",
+        "description": "Instalamos y reparamos calentadores de gas, termos eléctricos de todas las marcas con piezas originales garantizadas.",
+        "price": "Consultar",
+        "imageUrl": "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Instalación de Grifería y Sanitarios",
+        "description": "Cambiamos tu vieja grifería, inodoros o lavabos por modelos modernos más eficientes que te ayudarán a ahorrar agua.",
+        "price": "Desde 35€/unidad",
+        "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "features": [
+      {
+        "title": "Atención 24/7",
+        "description": "Estamos de guardia día y noche, fines de semana y festivos para cualquier avería imprevista.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Presupuesto Gratuito",
+        "description": "Te damos un presupuesto cerrado por WhatsApp o teléfono antes de ir para tu total tranquilidad.",
+        "icon": "ClipboardCheck"
+      },
+      {
+        "title": "Garantía Escrita",
+        "description": "Todos nuestros trabajos y reparaciones cuentan con garantía por escrito de 6 meses.",
+        "icon": "ShieldCheck"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542013936693-8848e574047a?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80"
+    ]
+  },
+  {
+    "id": "peluqueriaana",
+    "subdomain": "peluqueriaana",
+    "name": "Ana Estilistas",
+    "sector": "belleza",
+    "theme": {
+      "primary": "#db2777",
+      "secondary": "#fdf2f8",
+      "dark": false,
+      "font": "Outfit"
+    },
+    "contact": {
+      "phone": "+34 931 234 567",
+      "email": "info@anaestilistas.es",
+      "address": "Calle del Cabello, 25",
+      "city": "Barcelona",
+      "mapsUrl": "https://maps.google.com",
+      "whatsappMessage": "Hola Ana, me gustaría reservar cita para un corte y tinte.",
+      "schedule": "Lunes a Viernes: 10:00 - 20:00. Sábados: 9:00 - 14:00 (Domingos cerrado)."
+    },
+    "logoUrl": "",
+    "hero": {
+      "title": "Encuentra tu estilo y brilla con luz propia",
+      "subtitle": "Salón de peluquería, tratamientos capilares orgánicos, coloración avanzada y estética en Barcelona. ¡Pide tu cita hoy mismo!",
+      "backgroundImage": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80"
+    },
+    "about": "En Ana Estilistas creemos que tu cabello es el mejor reflejo de tu personalidad. Con más de 15 años de formación continua en tendencias de color, corte y cuidado capilar, te ofrecemos un asesoramiento personalizado para conseguir ese look que tanto deseas, siempre cuidando la salud de tu melena con productos libres de amoniaco.",
+    "services": [
+      {
+        "name": "Corte y Peinado Mujer",
+        "description": "Estudio de visagismo previo para adaptar el corte a tus facciones. Incluye lavado con masaje capilar y peinado con estilo.",
+        "price": "28.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Coloración Orgánica Avanzada",
+        "description": "Tintes 100% orgánicos, barros y óleos naturales que cubren canas a la perfección sin dañar ni irritar el cuero cabelludo.",
+        "price": "Desde 35.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1605497746444-1f237f62c6db?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Tratamiento de Hidratación Ácido Hialurónico",
+        "description": "Tratamiento intensivo para melenas deshidratadas o castigadas. Aporta un brillo deslumbrante y elimina el encrespamiento.",
+        "price": "45.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "name": "Balayage / Babylights",
+        "description": "Técnicas de degradado de color y mechas ultrafinas para aportar luz tridimensional y naturalidad a tu melena.",
+        "price": "Desde 65.00€",
+        "imageUrl": "https://images.unsplash.com/photo-1620331789559-606981594834?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "features": [
+      {
+        "title": "Productos Bio",
+        "description": "Utilizamos marcas profesionales respetuosas con el medio ambiente y con tu cuero cabelludo.",
+        "icon": "Heart"
+      },
+      {
+        "title": "Asesoramiento Gratuito",
+        "description": "Analizamos tu cabello y te recomendamos el corte y tono idóneo antes de empezar el servicio.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Reserva WhatsApp",
+        "description": "Olvídate de llamar por teléfono. Reserva tu cita cómodamente escribiéndonos un WhatsApp rápido.",
+        "icon": "MessageSquare"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1605497746444-1f237f62c6db?auto=format&fit=crop&w=500&q=80",
+      "https://images.unsplash.com/photo-1527799822367-a233b47b0ee6?auto=format&fit=crop&w=500&q=80"
+    ]
+  }
+]
