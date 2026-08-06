@@ -28,11 +28,21 @@ export function proxy(request: NextRequest) {
       subdomain = parts[0];
     }
   } else {
-    // En producción, p.ej. barpaco.ggsite.es o ggsite.es
     const parts = host.split('.');
-    // Para ggsite.es, partes.length es 2. Si es barpaco.ggsite.es, partes.length es 3.
-    if (parts.length > 2 && parts[0] !== 'www') {
-      subdomain = parts[0];
+    const isVercelApp = host.endsWith('vercel.app');
+    
+    if (isVercelApp) {
+      // Para ggsite-two.vercel.app (3 partes), es el principal
+      // Para barpaco.ggsite-two.vercel.app (4 partes), el subdominio es barpaco
+      if (parts.length > 3 && parts[0] !== 'www') {
+        subdomain = parts[0];
+      }
+    } else {
+      // Para ggsite.es (2 partes), es el principal
+      // Para barpaco.ggsite.es (3 partes), el subdominio es barpaco
+      if (parts.length > 2 && parts[0] !== 'www') {
+        subdomain = parts[0];
+      }
     }
   }
 

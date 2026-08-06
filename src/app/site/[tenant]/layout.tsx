@@ -1,6 +1,32 @@
 import React from 'react';
 import { getSiteBySubdomain } from '@/lib/sites';
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
+
+function getRootDomain(host: string): string {
+  const isLocalhost = host.includes('localhost') || host.includes('127.0.0.1');
+  const protocol = isLocalhost ? 'http://' : 'https://';
+  
+  if (isLocalhost) {
+    return `${protocol}localhost:3000`;
+  }
+  
+  const parts = host.split('.');
+  const isVercelApp = host.endsWith('vercel.app');
+  
+  if (isVercelApp) {
+    if (parts.length > 3) {
+      return `${protocol}${parts.slice(1).join('.')}`;
+    }
+  } else {
+    if (parts.length > 2) {
+      return `${protocol}${parts.slice(1).join('.')}`;
+    }
+  }
+  
+  return `${protocol}${host}`;
+}
+
 
 interface Props {
   children: React.ReactNode;
@@ -28,6 +54,10 @@ export default async function TenantLayout({ children, params }: Props) {
   const resolvedParams = await params;
   const config = getSiteBySubdomain(resolvedParams.tenant);
 
+  const headersList = await headers();
+  const host = headersList.get('host') || 'localhost:3000';
+  const rootDomain = getRootDomain(host);
+
   if (!config) {
     return (
       <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-6 text-center">
@@ -40,7 +70,7 @@ export default async function TenantLayout({ children, params }: Props) {
             Lo sentimos, no hemos podido encontrar ninguna página web configurada para el subdominio <strong className="text-slate-200">"{resolvedParams.tenant}"</strong>.
           </p>
           <a
-            href="http://localhost:3000"
+            href={rootDomain}
             className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition duration-300 shadow-lg shadow-indigo-500/20"
           >
             Volver a ggsite.es
