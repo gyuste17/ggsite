@@ -201,7 +201,7 @@ export default function MotherPage() {
               </div>
               <div className="p-6 pt-0">
                 <a
-                  href="http://barpaco.localhost:3000"
+                  href="/site/barpaco"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-slate-900 hover:bg-indigo-600 hover:text-white border border-slate-800 hover:border-indigo-500/30 text-slate-300 font-semibold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg text-sm"
@@ -230,7 +230,7 @@ export default function MotherPage() {
               </div>
               <div className="p-6 pt-0">
                 <a
-                  href="http://fontanerogomez.localhost:3000"
+                  href="/site/fontanerogomez"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-slate-900 hover:bg-indigo-600 hover:text-white border border-slate-800 hover:border-indigo-500/30 text-slate-300 font-semibold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg text-sm"
@@ -259,7 +259,7 @@ export default function MotherPage() {
               </div>
               <div className="p-6 pt-0">
                 <a
-                  href="http://peluqueriaana.localhost:3000"
+                  href="/site/peluqueriaana"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center bg-slate-900 hover:bg-indigo-600 hover:text-white border border-slate-800 hover:border-indigo-500/30 text-slate-300 font-semibold py-3 rounded-xl transition duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg text-sm"
