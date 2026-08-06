@@ -52,9 +52,9 @@ export default function BeautyTemplate({ config }: Props) {
           
           <nav className="hidden md:flex items-center gap-8 font-medium text-sm">
             <a href="#about" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Nosotros</a>
-            <a href="#prices" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Precios & Servicios</a>
-            <a href="#gallery" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-655'}`}>Trabajos</a>
-            <a href="#contact" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Cita</a>
+            <a href="#prices" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Precios & Servicios</a>
+            <a href="#gallery" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Trabajos</a>
+            <a href="#contact" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Cita</a>
           </nav>
           
           <div className="flex items-center gap-4">
@@ -284,7 +284,7 @@ export default function BeautyTemplate({ config }: Props) {
                   </div>
                   <div>
                     <h4 className="font-bold">Dirección del Salón</h4>
-                    <p className={`text-sm ${isDark ? 'text-slate-350' : 'text-slate-650'}`}>{config.contact.address}, {config.contact.city}</p>
+                    <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>{config.contact.address}, {config.contact.city}</p>
                     {config.contact.mapsUrl && (
                       <a
                         href={config.contact.mapsUrl}
@@ -304,7 +304,7 @@ export default function BeautyTemplate({ config }: Props) {
                   </div>
                   <div>
                     <h4 className="font-bold">Horarios</h4>
-                    <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-350' : 'text-slate-655'}`}>
+                    <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
                       {config.contact.schedule}
                     </p>
                   </div>
@@ -316,7 +316,7 @@ export default function BeautyTemplate({ config }: Props) {
                   </div>
                   <div>
                     <h4 className="font-bold">Teléfono & WhatsApp</h4>
-                    <p className={`text-sm ${isDark ? 'text-slate-350' : 'text-slate-655'}`}>{config.contact.phone}</p>
+                    <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>{config.contact.phone}</p>
                   </div>
                 </div>
               </div>
@@ -326,7 +326,7 @@ export default function BeautyTemplate({ config }: Props) {
               isDark ? 'bg-slate-900 border-slate-800' : 'bg-pink-50/10 border-pink-100/50'
             }`}>
               <h3 className="text-xl font-bold mb-4 font-serif">Solicitar Cita</h3>
-              <p className={`text-sm mb-6 ${isDark ? 'text-slate-400' : 'text-slate-650'}`}>Completa el formulario y te confirmaremos la cita de inmediato por WhatsApp.</p>
+              <p className={`text-sm mb-6 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>Completa el formulario y te confirmaremos la cita de inmediato por WhatsApp.</p>
               <form onSubmit={(e) => { e.preventDefault(); window.open(whatsappUrl, '_blank'); }} className="space-y-4">
                 <div>
                   <input
@@ -336,7 +336,7 @@ export default function BeautyTemplate({ config }: Props) {
                     className={`w-full px-4 py-3 rounded-xl border text-sm focus:outline-none focus:ring-2 focus:ring-tenant-primary/20 focus:border-tenant-primary ${
                       isDark 
                         ? 'bg-slate-950 border-slate-800 text-white placeholder-slate-600' 
-                        : 'bg-white border-pink-100 text-slate-850 placeholder-slate-400'
+                        : 'bg-white border-pink-100 text-slate-800 placeholder-slate-400'
                     }`}
                   />
                 </div>

@@ -63,10 +63,10 @@ export default function ServiceTemplate({ config }: Props) {
           </a>
           
           <nav className="hidden md:flex items-center gap-8 font-semibold text-sm">
-            <a href="#services" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Servicios</a>
-            <a href="#about" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Nosotros</a>
-            <a href="#features" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Garantías</a>
-            <a href="#contact" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>Contacto</a>
+            <a href="#services" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Servicios</a>
+            <a href="#about" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Nosotros</a>
+            <a href="#features" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Garantías</a>
+            <a href="#contact" className={`hover:text-tenant-primary transition-colors ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>Contacto</a>
           </nav>
           
           <div className="flex items-center gap-4">
@@ -168,7 +168,7 @@ export default function ServiceTemplate({ config }: Props) {
               className={`rounded-2xl border overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
                 isDark 
                   ? 'bg-slate-900 border-slate-800 hover:border-slate-700 hover:shadow-black/25' 
-                  : 'bg-white border-slate-200/80 hover:border-slate-350 hover:shadow-slate-200/40'
+                  : 'bg-white border-slate-200/80 hover:border-slate-300 hover:shadow-slate-200/40'
               }`}
             >
               <div>
@@ -228,7 +228,7 @@ export default function ServiceTemplate({ config }: Props) {
           <div className="order-1 md:order-2">
             <span className="text-tenant-primary font-bold text-sm uppercase tracking-wider">Sobre Nosotros</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold mt-2 mb-6 tracking-tight">Experiencia y Honestidad a su Servicio</h2>
-            <p className={`text-lg leading-relaxed mb-6 ${isDark ? 'text-slate-350' : 'text-slate-700'}`}>
+            <p className={`text-lg leading-relaxed mb-6 ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
               {config.about}
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -306,7 +306,7 @@ export default function ServiceTemplate({ config }: Props) {
                   </div>
                   <div>
                     <h4 className="font-bold">Horario de Servicio</h4>
-                    <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-350' : 'text-slate-650'}`}>
+                    <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
                       {config.contact.schedule}
                     </p>
                   </div>
@@ -318,7 +318,7 @@ export default function ServiceTemplate({ config }: Props) {
                   </div>
                   <div>
                     <h4 className="font-bold">Zona de Cobertura</h4>
-                    <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-slate-650'}`}>{config.contact.address}, {config.contact.city}</p>
+                    <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>{config.contact.address}, {config.contact.city}</p>
                     <p className={`text-xs mt-1 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Desplazamiento rápido por toda la provincia</p>
                   </div>
                 </div>
@@ -329,7 +329,7 @@ export default function ServiceTemplate({ config }: Props) {
               isDark ? 'bg-slate-900 border-slate-800' : 'bg-slate-50 border-slate-200'
             }`}>
               <h3 className="text-xl font-bold mb-4">¿Quieres que te llamemos?</h3>
-              <p className={`text-sm mb-6 ${isDark ? 'text-slate-400' : 'text-slate-650'}`}>Déjanos tu problema y tus datos y un técnico se pondrá en contacto contigo inmediatamente.</p>
+              <p className={`text-sm mb-6 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>Déjanos tu problema y tus datos y un técnico se pondrá en contacto contigo inmediatamente.</p>
               <form onSubmit={(e) => { e.preventDefault(); window.open(whatsappUrl, '_blank'); }} className="space-y-4">
                 <div>
                   <input
@@ -382,7 +382,7 @@ export default function ServiceTemplate({ config }: Props) {
 
       {/* FOOTER */}
       <footer className={`py-12 border-t text-center px-6 transition-colors duration-200 ${
-        isDark ? 'bg-slate-900 border-slate-850 text-slate-500' : 'bg-slate-100 border-slate-250 text-slate-500'
+        isDark ? 'bg-slate-900 border-slate-800 text-slate-500' : 'bg-slate-100 border-slate-200 text-slate-500'
       }`}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p>© {new Date().getFullYear()} {config.name}. Todos los derechos reservados.</p>

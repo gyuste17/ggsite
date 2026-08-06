@@ -390,7 +390,7 @@ export default function RestaurantTemplate({ config }: Props) {
                     placeholder="Ej: Juan Pérez"
                     className={`w-full px-4 py-3 rounded-xl border text-sm focus:outline-none focus:ring-2 focus:ring-tenant-primary/20 focus:border-tenant-primary ${
                       isDark 
-                        ? 'bg-slate-950 border-slate-800 text-white placeholder-slate-650' 
+                        ? 'bg-slate-950 border-slate-800 text-white placeholder-slate-500' 
                         : 'bg-white border-stone-300 text-stone-800 placeholder-stone-400'
                     }`}
                   />
