@@ -8,15 +8,15 @@ Este documento define la estructura técnica del proyecto **ggsite.es**, su fluj
 
 La plataforma funciona como una web madre (`ggsite.es`) y múltiples mini-webs de clientes servidas a través de subdominios dinámicos (`negocio.ggsite.es` o `negocio.localhost:3000`).
 
-- **Enrutamiento**: Se gestiona mediante [`src/proxy.ts`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/src/proxy.ts) (Next.js v16). Si se detecta un subdominio válido, reescribe la petición internamente a `/site/[tenant]`.
-- **Datos de Clientes**: Guardados en un archivo JSON local en [`src/data/sites.json`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/src/data/sites.json) estructurado mediante la interfaz de TypeScript `SiteConfig` en [`src/types/site.ts`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/src/types/site.ts).
-- **Estilos del Tenant**: Se inyectan como variables CSS inline (`--tenant-primary`, `--tenant-secondary`) en el layout del tenant [`src/app/site/[tenant]/layout.tsx`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/src/app/site/%5Btenant%5D/layout.tsx), lo que permite que Tailwind CSS v4 aplique clases personalizadas como `bg-tenant-primary` de forma dinámica.
+- **Enrutamiento**: Se gestiona mediante [`src/proxy.ts`](src/proxy.ts) (Next.js v16). Si se detecta un subdominio válido, reescribe la petición internamente a `/site/[tenant]`.
+- **Datos de Clientes**: Guardados en un archivo JSON local en [`src/data/sites.json`](src/data/sites.json) estructurado mediante la interfaz de TypeScript `SiteConfig` en [`src/types/site.ts`](src/types/site.ts).
+- **Estilos del Tenant**: Se inyectan como variables CSS inline (`--tenant-primary`, `--tenant-secondary`) en el layout del tenant [`src/app/site/[tenant]/layout.tsx`](src/app/site/%5Btenant%5D/layout.tsx), lo que permite que Tailwind CSS v4 aplique clases personalizadas como `bg-tenant-primary` de forma dinámica.
 
 ---
 
 ## 🚀 2. Flujo de Adición de Nuevos Negocios
 
-El proyecto cuenta con un prompt estructurado en [`PROMPT_GENERADOR.md`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/PROMPT_GENERADOR.md).
+El proyecto cuenta con un prompt estructurado en [`PROMPT_GENERADOR.md`](PROMPT_GENERADOR.md).
 Cuando se soliciten nuevos negocios:
 1. Leer los datos básicos (nombre, sector, contacto, colores).
 2. Generar el JSON correspondiente que satisfaga `SiteConfig`.
@@ -93,7 +93,7 @@ model Feature {
 ```
 
 ### Paso 2: Adaptar el Helper de Datos
-Únicamente se debe reescribir [`src/lib/sites.ts`](file:///c:/Users/gyust/OneDrive - guillermoyuste.es/Escritorio/GY Antigravity/ggsite/src/lib/sites.ts) para que consuma Prisma en lugar de importar el JSON local.
+Únicamente se debe reescribir [`src/lib/sites.ts`](src/lib/sites.ts) para que consuma Prisma en lugar de importar el JSON local.
 
 Ejemplo de adaptación del helper:
 ```typescript
